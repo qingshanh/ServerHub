@@ -1,0 +1,30 @@
+{
+  "name": "serverhub",
+  "version": "1.0.0",
+  "description": "多服务器已部署项目聚合导航与轻量资产管理平台",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test/verify.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qingshanh/ServerHub.git"
+  },
+  "keywords": [
+    "dashboard",
+    "homelab",
+    "navigation",
+    "multi-server",
+    "self-hosted",
+    "devops"
+  ],
+  "author": "qingshanh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qingshanh/ServerHub/issues"
+  },
+  "homepage": "https://github.com/qingshanh/ServerHub#readme"
+}

@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-08T08:00:00.000Z",
+  "settings": {
+    "siteTitle": "ServerHub - 我的服务器项目聚合",
+    "subtitle": "多服务器自建项目与服务统一管理入口",
+    "defaultView": "server",
+    "preferInternal": false,
+    "theme": "dark"
+  },
+  "servers": [
+    { "id": "srv-1", "name": "核心云服务器", "color": "#6366f1", "description": "公网业务与反代网关" },
+    { "id": "srv-2", "name": "家庭NAS", "color": "#10b981", "description": "局域网存储与私有服务" }
+  ],
+  "categories": [
+    { "id": "cat-1", "name": "监控运维", "icon": "activity" },
+    { "id": "cat-2", "name": "常用工具", "icon": "wrench" }
+  ],
+  "items": [
+    {
+      "id": "item-demo-1",
+      "title": "Portainer 容器管理",
+      "url": "https://portainer.example.com",
+      "internalUrl": "http://192.168.1.10:9000",
+      "server": "家庭NAS",
+      "category": "监控运维",
+      "description": "Docker 容器可视化管理与集群监控面板",
+      "notes": "端口: 9000; 映射路径: /volume1/docker/portainer",
+      "icon": "",
+      "order": 1,
+      "createdAt": "2026-11-08T08:00:00.000Z",
+      "updatedAt": "2026-11-08T08:00:00.000Z"
+    },
+    {
+      "id": "item-demo-2",
+      "title": "Uptime Kuma 服务探活",
+      "url": "https://status.example.com",
+      "internalUrl": "http://10.0.0.2:3001",
+      "server": "核心云服务器",
+      "category": "监控运维",
+      "description": "多节点服务可用性与响应延迟实时大屏",
+      "notes": "反向代理 3001 端口",
+      "icon": "",
+      "order": 2,
+      "createdAt": "2026-11-08T08:05:00.000Z",
+      "updatedAt": "2026-11-08T08:05:00.000Z"
+    }
+  ]
+}

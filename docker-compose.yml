@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  serverhub:
+    build: .
+    container_name: serverhub
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      # 持久化存储目录：所有项目、服务器标签、配置和备注均保存在此
+      - ./data:/app/data
+    environment:
+      - PORT=3000
+      - HOST=0.0.0.0
+      - TZ=Asia/Shanghai
