@@ -1,6 +1,10 @@
-# 本地持久化数据与真实隐私（防敏感信息泄露）
+# 本地真实项目数据与凭据（防敏感信息泄露）
 data/projects.json
 data/*.tmp
+
+# 临时测试与探针脚本
+_tmp/
+proxy_bridge.py
 
 # 运行日志
 *.log
